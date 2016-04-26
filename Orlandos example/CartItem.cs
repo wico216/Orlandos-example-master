@@ -18,8 +18,7 @@ namespace Orlandos_example
         {
             Product = item;
             Quantity = Qty;
-
-           
+                   
 
         }      
 
