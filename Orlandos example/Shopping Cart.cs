@@ -96,31 +96,35 @@ namespace Orlandos_example
 
 
             //normal show separate subtotals
-            foreach (var item in _cartItems)
-            {
-                Console.WriteLine(item.Subtotal);
-            }
+            //foreach (var item in _cartItems)
+            //{
+            //    Console.WriteLine(item.Subtotal);
+            //}
 
             //same as  above
             //lambda 
-            _cartItems.ForEach( item => Console.WriteLine(item.Subtotal));
+            //_cartItems.ForEach( item => Console.WriteLine(item.Subtotal));
 
         }
 
-        public void AddGlobalDiscountDollars(decimal discount)
-        {
-            _subTotal -= discount;
-        }
 
-        public void AddGlobalDiscountPercentage(decimal percentage)
-        {
-            _subTotal = - (_subTotal * (percentage / 100));
-        }
+        //---------------------------------------------
+        //-- ADDED THIS TO THE GLOBAL DISCOUNT CLASS -------------------------------
+        //--------------------------------------------------------------------------
+        //public void AddGlobalDiscountDollars(decimal discount)
+        //{
+        //    _subTotal -= discount;
+        //}
 
-        public void ShowTotalDiscount()
-        {
-            // return total cart amount
-            Console.WriteLine("Total Discount: " + (SubDisc - _subTotal));
-        }
+        //public void AddGlobalDiscountPercentage(decimal percentage)
+        //{
+        //    _subTotal = - (_subTotal * (percentage / 100));
+        //}
+
+        //public void ShowTotalDiscount()
+        //{
+        //    // return total cart amount
+        //    Console.WriteLine("Total Discount: " + (SubDisc - _subTotal));
+        //}
     }
 }
